@@ -1,0 +1,11 @@
+{
+  "title": "Design Lab Internal Resources",
+  "description": "Centralizes internal resources for employees, enabling easy access to company documents, tools, and information to boost productivity and collaboration.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

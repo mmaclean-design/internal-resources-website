@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,800;1,200;1,800&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import 'tailwindcss';
+
+/* Source Sans Pro face aliases matching imported design font-family names */
+@font-face {
+  font-family: 'Source Sans Pro:SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://static.figma.com/font/SourceSansPro-SemiBold_2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans Pro:SemiBold Italic';
+  font-style: italic;
+  font-weight: 600;
+  src: url('https://static.figma.com/font/SourceSansPro-SemiBoldItalic_2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans Pro:Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://static.figma.com/font/SourceSansPro-Bold_2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans Pro:Italic';
+  font-style: italic;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/sourcesanspro/v22/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDJB9cme.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans Pro:Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans Pro:Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans Pro:SemiBold_Italic';
+  font-style: italic;
+  font-weight: 600;
+  src: url('https://static.figma.com/font/SourceSansPro-SemiBoldItalic_2') format('woff2');
+}
+
+/* Refrigerator Deluxe — not available; use Barlow Condensed ExtraBold as fallback */
+@font-face {
+  font-family: 'Refrigerator Deluxe:ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Barlow Condensed ExtraBold'), local('BarlowCondensed-ExtraBold'),
+       url('https://fonts.gstatic.com/s/barlowcondensed/v12/HTxwL3I-JCGChYJ8VI-L6OO_au7B6xTr13GRhU6Nhg.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Refrigerator Deluxe:Extrabold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Barlow Condensed ExtraBold'), local('BarlowCondensed-ExtraBold'),
+       url('https://fonts.gstatic.com/s/barlowcondensed/v12/HTxwL3I-JCGChYJ8VI-L6OO_au7B6xTr13GRhU6Nhg.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Refrigerator Deluxe:Light';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Barlow Condensed ExtraLight'), local('BarlowCondensed-ExtraLight'),
+       url('https://fonts.gstatic.com/s/barlowcondensed/v12/HTx3L3I-JCGChYJ8VI-L6OO_au7B47xwW-Ad3aI.woff2') format('woff2');
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  overflow-x: auto;
+}
