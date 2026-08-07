@@ -3,7 +3,6 @@ import NavBar from "@/components/NavBar";
 import imgGradient from "@/imports/BrandGuidelines/fa0647cf99bd411b2ade23b73af7083564e8d624.png";
 import imgWhiteDlAbLogo1 from "@/imports/BrandGuidelines/c8b9d6f8944bd1fd45b800dedfe054568c29db87.png";
 import imgBrandScreenshot from "@/imports/BrandGuidelines/3bce18bea8f1fbe409b1c64a6213c6b094cf6888.png";
-import imgCommsScreenshot from "@/imports/BrandGuidelines/3c41fc13869711671bd6113b527d26e0a85cd644.png";
 import svgPaths from "@/imports/BrandGuidelines/svg-0yog0ioqmw";
 
 const btnPath = svgPaths.peab5080;
@@ -64,30 +63,6 @@ function BrandAssetsDropdown() {
   );
 }
 
-function PromoteWorkDropdown() {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="w-[1100px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] rounded-[8px] overflow-hidden">
-      <DropdownHeader title="How to Promote Your Work" open={open} onToggle={() => setOpen(!open)} />
-      {open && (
-        <div className="bg-white p-4 flex gap-4">
-          <a href="https://docs.google.com/presentation/d/1Ddian_sg-zFxJLFXwhFV9tM_ztR8DusTypzN4ZHXgZo/present?slide=id.p" target="_blank" rel="noreferrer" className="bg-[#f5f0e6] w-[858px] p-4 rounded-[8px] block">
-            <div className="rounded-[25px] overflow-hidden h-[439px]">
-              <img alt="Comms screenshot" className="w-full h-full object-cover" src={imgCommsScreenshot} />
-            </div>
-          </a>
-          <div className="bg-[#f5f0e6] flex-1 p-6 rounded-[8px]">
-            <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-black text-[24px] tracking-[1.2px] uppercase mb-4">SOP: Engage with CommS</p>
-            <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-black text-[20px] tracking-[1px]">
-              Design Lab Members may want to utilize the following branded assets and templates:
-            </p>
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
-
 export default function BrandGuidelinesPage() {
   return (
     <div className="bg-white min-w-[1440px] flex flex-col items-center">
@@ -108,7 +83,6 @@ export default function BrandGuidelinesPage() {
       {/* Dropdowns */}
       <div className="flex flex-col items-center gap-[68px] py-12 bg-white">
         <BrandAssetsDropdown />
-        <PromoteWorkDropdown />
       </div>
 
       {/* Footer */}

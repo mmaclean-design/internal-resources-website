@@ -26,7 +26,7 @@ export default function HomePage() {
           Internal Resources
         </p>
         <p
-          className="absolute left-[950.25px] top-[183px] w-[502.95px] text-[24px] uppercase tracking-[1.2px] text-white font-['Source_Sans_Pro:SemiBold',sans-serif]"
+          className="absolute left-[950.25px] top-[183px] w-[432px] text-[24px] uppercase tracking-[1.2px] text-white font-['Source_Sans_Pro:SemiBold',sans-serif]"
         >
           Your Essential Guide for All Things Design Lab
         </p>
