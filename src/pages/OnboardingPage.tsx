@@ -53,7 +53,7 @@ function UsefulLinksDropdown() {
 
 export default function OnboardingPage() {
   return (
-    <div className="bg-white min-w-[1440px] min-h-screen flex flex-col">
+    <div className="bg-white min-w-[1440px] min-h-screen flex flex-col items-center">
       <div className="sticky top-0 z-50">
         <NavBar />
       </div>

@@ -7,7 +7,7 @@ import svgPaths from "@/imports/Home/svg-mp1aneno70";
 export default function HomePage() {
   const navigate = useNavigate();
   return (
-    <div className="bg-white min-w-[1440px]">
+    <div className="bg-white min-w-[1440px] flex flex-col items-center">
       {/* NavBar */}
       <div className="sticky top-0 z-50">
         <NavBar />
