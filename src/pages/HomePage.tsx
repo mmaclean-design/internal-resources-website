@@ -114,15 +114,15 @@ export default function HomePage() {
       </div>
 
       {/* Mailing Block */}
-      <div className="relative bg-white py-12 w-[1440px]">
-        <div className="absolute left-[72px] top-[40px]">
+      <div className="bg-white py-16 w-[1440px] flex items-center pl-[67px] gap-6">
+        <div className="shrink-0">
           <p className="capitalize font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#00629b] text-[24px] tracking-[1.2px] w-[310.8px]">Deliveries &amp; Mail</p>
           <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#00c6d7] text-[48px] tracking-[2.4px] uppercase w-[433.65px]">Mailing Address</p>
           <p className="capitalize font-['Source_Sans_Pro:SemiBold_Italic',sans-serif] italic leading-[25px] text-[#00629b] text-[16px] tracking-[0.8px] w-[367.5px]">Mailboxes located on the First Floor of the DIB</p>
         </div>
-        <div className="flex justify-end pr-8 pt-[30px]">
-          <div className="bg-[#00629b] rounded-[5px] w-[906px] h-[171px] relative">
-            <div className="[word-break:break-word] absolute capitalize font-['Source_Sans_Pro:Bold',sans-serif] left-[36px] top-[24px] leading-[33px] text-[20px] text-white tracking-[1px] w-[628.95px]">
+        <div className="ml-auto mr-[48px]">
+          <div className="bg-[#00629b] rounded-[5px] w-[864px] h-[216px] flex items-center px-9">
+            <div className="[word-break:break-word] capitalize font-['Source_Sans_Pro:Bold',sans-serif] leading-[33px] text-[20px] text-white tracking-[1px] w-[628.95px]">
               <p className="mb-0">UCSD Design Lab</p>
               <p className="font-['Source_Sans_Pro:Regular',sans-serif]">Design &amp; Innovation Building 9500 Gilman Drive, MC0425<br />La Jolla, CA 92093</p>
             </div>
