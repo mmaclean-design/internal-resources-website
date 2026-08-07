@@ -240,48 +240,6 @@ function DibRoomReservationDropdown({ initialOpen = false }: { initialOpen?: boo
       <DropdownHeader title="Additional Room Reservations" open={open} onToggle={() => setOpen(!open)} />
       {open && (
         <div className="bg-white flex flex-col gap-[5px] pt-[5px] pb-6">
-          {/* Room calendar preview boxes */}
-          <div className="flex gap-[5px]">
-            {/* 306 */}
-            <a
-              href="https://calendar.google.com/calendar/embed?src=c_1qldhnidftqnonsitr6r78h2io%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-              target="_blank"
-              rel="noreferrer"
-              className="bg-[#f5f0e6] flex-1 h-[494px] relative overflow-hidden block"
-            >
-              <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#182b49] text-[21.248px] tracking-[1.0624px] uppercase absolute top-4 left-5 z-10">306</p>
-              <div className="absolute inset-x-5 top-14 bottom-5 overflow-hidden">
-                <iframe
-                  src="https://calendar.google.com/calendar/embed?src=c_1qldhnidftqnonsitr6r78h2io%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-                  className="w-full h-full border-0 pointer-events-none"
-                  frameBorder={0}
-                  scrolling="no"
-                  title="Room 306 Calendar"
-                />
-              </div>
-              <span className="absolute inset-0 z-10" />
-            </a>
-            {/* 307 */}
-            <a
-              href="https://calendar.google.com/calendar/embed?src=c_6md3p7bla5c20cmbcd5idfbbns%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-              target="_blank"
-              rel="noreferrer"
-              className="bg-[#f5f0e6] flex-1 h-[494px] relative overflow-hidden block"
-            >
-              <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#182b49] text-[21.248px] tracking-[1.0624px] uppercase absolute top-4 left-5 z-10">307</p>
-              <div className="absolute inset-x-5 top-14 bottom-5 overflow-hidden">
-                <iframe
-                  src="https://calendar.google.com/calendar/embed?src=c_6md3p7bla5c20cmbcd5idfbbns%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-                  className="w-full h-full border-0 pointer-events-none"
-                  frameBorder={0}
-                  scrolling="no"
-                  title="Room 307 Calendar"
-                />
-              </div>
-              <span className="absolute inset-0 z-10" />
-            </a>
-          </div>
-
           {/* Info block + button */}
           <div className="flex gap-[5px] items-stretch">
             <div className="bg-[#f5f0e6] flex-1 px-6 py-5">
