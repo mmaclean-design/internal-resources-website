@@ -43,7 +43,7 @@ export default function HomePage() {
         <div className="flex gap-6 ml-auto mr-[48px]">
           {/* Design Lab */}
           <div className="bg-[#00629b] rounded-[5px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] w-[420px] flex flex-col px-6 pt-5 pb-6 shrink-0">
-            <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[28px] text-white leading-tight mb-3">DESIGN LAB</p>
+            <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[28px] text-white leading-tight mb-3 whitespace-nowrap">DESIGN LAB</p>
             <div className="w-full h-[3px] bg-white rounded mb-5 shrink-0" />
             <div className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[20px] text-white tracking-[1px] flex flex-col gap-3">
               <div className="flex gap-4">
@@ -59,7 +59,7 @@ export default function HomePage() {
 
           {/* DIB */}
           <div className="bg-[#00629b] rounded-[5px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] w-[420px] flex flex-col px-6 pt-5 pb-6 shrink-0">
-            <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[22px] text-white leading-tight mb-3">DESIGN AND INNOVATION BUILDING</p>
+            <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[28px] text-white leading-tight mb-3 whitespace-nowrap">DESIGN AND INNOVATION BUILDING</p>
             <div className="w-full h-[3px] bg-white rounded mb-5 shrink-0" />
             <div className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[20px] text-white tracking-[1px] flex flex-col gap-3">
               <div className="flex gap-4">
