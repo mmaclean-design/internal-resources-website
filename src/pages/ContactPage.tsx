@@ -123,14 +123,16 @@ function ContactsDropdown() {
       {open && (
         <div className="bg-white p-4 flex gap-4">
           {/* Email mailing list */}
-          <div className="bg-[#f5f0e6] w-[700px] p-6 rounded-[8px]">
+          <div className="bg-[#f5f0e6] w-[600px] p-6 rounded-[8px] flex flex-col">
             <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Emails Mailing List</p>
-            {emailList.map((row) => (
-              <div key={row.value} className="flex justify-between items-center gap-4 py-3">
-                <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[20px]">{row.label}</p>
-                <p className="font-['Source_Sans_Pro:SemiBold_Italic',sans-serif] italic text-[#1e1e1e] text-[20px] text-right shrink-0">{row.value}</p>
-              </div>
-            ))}
+            <div className="flex-1 flex flex-col justify-between">
+              {emailList.map((row) => (
+                <div key={row.value} className="flex justify-between items-center gap-4">
+                  <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[16px] whitespace-nowrap">{row.label}</p>
+                  <p className="font-['Source_Sans_Pro:SemiBold_Italic',sans-serif] italic text-[#1e1e1e] text-[16px] text-right shrink-0 whitespace-nowrap">{row.value}</p>
+                </div>
+              ))}
+            </div>
           </div>
           {/* Right column */}
           <div className="flex flex-col gap-4 flex-1">
@@ -138,8 +140,8 @@ function ContactsDropdown() {
               <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Emergency</p>
               {emergencyList.map((row) => (
                 <div key={row.label} className="flex justify-between items-center gap-4 py-3">
-                  <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[20px]">{row.label}</p>
-                  <p className="font-['Source_Sans_Pro:SemiBold_Italic',sans-serif] italic text-[#1e1e1e] text-[20px] text-right shrink-0">{row.value}</p>
+                  <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[16px] whitespace-nowrap">{row.label}</p>
+                  <p className="font-['Source_Sans_Pro:SemiBold_Italic',sans-serif] italic text-[#1e1e1e] text-[16px] text-right shrink-0 whitespace-nowrap">{row.value}</p>
                 </div>
               ))}
             </div>
@@ -147,8 +149,8 @@ function ContactsDropdown() {
               <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Building Management</p>
               {buildingList.map((row) => (
                 <div key={row.label} className="flex justify-between items-center gap-4 py-3">
-                  <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[20px]">{row.label}</p>
-                  <p className="font-['Source_Sans_Pro:SemiBold_Italic',sans-serif] italic text-[#1e1e1e] text-[20px] text-right shrink-0">{row.value}</p>
+                  <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[16px] whitespace-nowrap">{row.label}</p>
+                  <p className="font-['Source_Sans_Pro:SemiBold_Italic',sans-serif] italic text-[#1e1e1e] text-[16px] text-right shrink-0 whitespace-nowrap">{row.value}</p>
                 </div>
               ))}
             </div>
