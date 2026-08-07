@@ -22,7 +22,9 @@ export default function NavBar() {
 location.pathname.startsWith("/ops");
 
   return (
-    <div className="h-[80px] relative w-[1440px] shrink-0">
+    <>
+    {/* Desktop */}
+    <div className="hidden md:block h-[80px] relative w-[1440px] shrink-0">
       <div className="absolute bg-[#182b49] inset-0" />
       <div className="absolute w-[58px] h-[58px] left-[20px] top-[11px]">
         <img
@@ -76,5 +78,42 @@ location.pathname.startsWith("/ops");
         <p className="leading-[normal]">Contact</p>
       </button>
     </div>
+
+    {/* Mobile */}
+    <div className="flex md:hidden bg-[#182b49] w-full h-[64px] items-center justify-between px-4 gap-3">
+      <img
+        alt="Design Lab"
+        className="h-[42px] w-[42px] object-cover cursor-pointer shrink-0"
+        src={imgDlabSquareLogo21}
+        onClick={() => navigate("/")}
+      />
+      <div className="flex items-center gap-3 shrink-0">
+        <button
+          onClick={() => navigate("/")}
+          className={`font-['Source_Sans_Pro:SemiBold',sans-serif] text-[11px] tracking-[0.5px] uppercase cursor-pointer whitespace-nowrap ${active("/") ? "text-[#00c6d7]" : "text-white"}`}
+        >
+          Home
+        </button>
+        <button
+          onClick={() => navigate("/resources")}
+          className={`font-['Source_Sans_Pro:SemiBold',sans-serif] text-[11px] tracking-[0.5px] uppercase cursor-pointer whitespace-nowrap ${resourcesActive ? "text-[#00c6d7]" : "text-white"}`}
+        >
+          Resources
+        </button>
+        <button
+          onClick={() => navigate("/contact")}
+          className={`font-['Source_Sans_Pro:SemiBold',sans-serif] text-[11px] tracking-[0.5px] uppercase cursor-pointer whitespace-nowrap ${active("/contact") ? "text-[#00c6d7]" : "text-white"}`}
+        >
+          Contact
+        </button>
+        <button
+          onClick={() => navigate("/faqs")}
+          className={`font-['Source_Sans_Pro:SemiBold',sans-serif] text-[11px] tracking-[0.5px] uppercase cursor-pointer whitespace-nowrap ${active("/faqs") ? "text-[#00c6d7]" : "text-white"}`}
+        >
+          FAQs
+        </button>
+      </div>
+    </div>
+    </>
   );
 }
