@@ -159,9 +159,9 @@ export default function HomePage() {
 
           {/* Row 2 */}
           <div className="flex gap-4">
-            <button onClick={() => navigate("/resources", { state: { openReservations: true } })} className="cursor-pointer">
+            <button onClick={() => navigate("/resources")} className="cursor-pointer">
               <div className="bg-[#00629b] h-[174px] rounded-[10px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] w-[252px] flex items-center justify-center p-4">
-                <p className="capitalize font-['Source_Sans_Pro:Bold',sans-serif] text-[#f5f0e6] text-[24px] text-center tracking-[1.2px] w-[184px]">ROOM RESERVATIONS</p>
+                <p className="capitalize font-['Source_Sans_Pro:Bold',sans-serif] text-[#f5f0e6] text-[24px] text-center tracking-[1.2px] w-[184px]">SPACE RESOURCES</p>
               </div>
             </button>
             <button onClick={() => navigate("/contact", { state: { openStaff: true } })} className="cursor-pointer">
