@@ -26,9 +26,9 @@ function DropdownHeader({ title, open, onToggle }: { title: string; open: boolea
   return (
     <button
       onClick={onToggle}
-      className="w-full bg-[#00629b] h-[70px] flex items-center justify-between px-7 drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] cursor-pointer"
+      className="w-full bg-[#00629b] h-[56px] md:h-[70px] flex items-center justify-between px-4 md:px-7 drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] cursor-pointer"
     >
-      <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[35px] text-left text-white tracking-[1.7px] uppercase">{title}</p>
+      <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[18px] md:text-[35px] text-left text-white tracking-[0.9px] md:tracking-[1.7px] uppercase">{title}</p>
       <Chevron open={open} />
     </button>
   );
@@ -55,14 +55,14 @@ const staffMembers: StaffMember[] = [
 
 function StaffCard({ member }: { member: StaffMember }) {
   return (
-    <div className="bg-[#182b49] flex gap-4 p-5 h-[256px] rounded-[8px]">
-      <div className="shrink-0 h-[214px] w-[215px] rounded-[7px] overflow-hidden">
+    <div className="bg-[#182b49] flex gap-4 p-4 md:p-5 h-auto md:h-[256px] rounded-[8px]">
+      <div className="shrink-0 h-[110px] w-[110px] md:h-[214px] md:w-[215px] rounded-[7px] overflow-hidden">
         <img alt={member.name} className="size-full object-cover rounded-[7px]" src={member.img} />
       </div>
       <div className="flex flex-col justify-center">
-        <p className="font-['Source_Sans_Pro:Bold',sans-serif] text-[32px] text-white tracking-[1.6px] uppercase leading-tight">{member.name}</p>
-        <p className="font-['Source_Sans_Pro:Italic',sans-serif] text-[26px] italic text-white tracking-[1.3px] leading-tight mt-1">{member.title}</p>
-        <div className="mt-3 font-['Source_Sans_Pro:Regular',sans-serif] text-[19px] text-white tracking-[0.98px]">
+        <p className="font-['Source_Sans_Pro:Bold',sans-serif] text-[20px] md:text-[32px] text-white tracking-[1.6px] uppercase leading-tight">{member.name}</p>
+        <p className="font-['Source_Sans_Pro:Italic',sans-serif] text-[16px] md:text-[26px] italic text-white tracking-[1.3px] leading-tight mt-1">{member.title}</p>
+        <div className="mt-3 font-['Source_Sans_Pro:Regular',sans-serif] text-[14px] md:text-[19px] text-white tracking-[0.98px]">
           {member.email && <p className="underline cursor-pointer">{member.email}</p>}
           {member.office && <p>{member.office}</p>}
         </div>
@@ -74,10 +74,10 @@ function StaffCard({ member }: { member: StaffMember }) {
 function StaffDropdown({ initialOpen = false }: { initialOpen?: boolean }) {
   const [open, setOpen] = useState(initialOpen);
   return (
-    <div className="w-[1100px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] rounded-[8px] overflow-hidden">
+    <div className="w-full md:w-[1100px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] rounded-[8px] overflow-hidden">
       <DropdownHeader title="Staff" open={open} onToggle={() => setOpen(!open)} />
       {open && (
-        <div className="bg-white p-4 grid grid-cols-2 gap-4">
+        <div className="bg-white p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
           {staffMembers.map((m) => (
             <StaffCard key={m.name} member={m} />
           ))}
@@ -118,39 +118,39 @@ const buildingList: ContactRow[] = [
 function ContactsDropdown() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="w-[1100px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] rounded-[8px] overflow-hidden">
+    <div className="w-full md:w-[1100px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] rounded-[8px] overflow-hidden">
       <DropdownHeader title="Contacts" open={open} onToggle={() => setOpen(!open)} />
       {open && (
-        <div className="bg-white p-4 flex gap-4">
+        <div className="bg-white p-4 flex flex-col md:flex-row gap-4">
           {/* Email mailing list */}
-          <div className="bg-[#f5f0e6] w-[600px] p-6 rounded-[8px] flex flex-col">
-            <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Emails Mailing List</p>
-            <div className="flex-1 flex flex-col justify-between">
+          <div className="bg-[#f5f0e6] w-full md:w-[600px] p-4 md:p-6 rounded-[8px] flex flex-col">
+            <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[18px] md:text-[24px] tracking-[1.2px] uppercase mb-4">Emails Mailing List</p>
+            <div className="flex flex-col md:flex-1 md:justify-between gap-2 md:gap-0">
               {emailList.map((row) => (
                 <div key={row.value} className="flex justify-between items-center gap-4">
-                  <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[16px] whitespace-nowrap">{row.label}</p>
-                  <p className="font-['Source_Sans_Pro:SemiBold_Italic',sans-serif] italic text-[#1e1e1e] text-[16px] text-right shrink-0 whitespace-nowrap">{row.value}</p>
+                  <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[13px] md:text-[16px] md:whitespace-nowrap">{row.label}</p>
+                  <p className="font-['Source_Sans_Pro:SemiBold_Italic',sans-serif] italic text-[#1e1e1e] text-[13px] md:text-[16px] text-right shrink-0 md:whitespace-nowrap">{row.value}</p>
                 </div>
               ))}
             </div>
           </div>
           {/* Right column */}
-          <div className="flex flex-col gap-4 flex-1">
-            <div className="bg-[#f5f0e6] p-6 rounded-[8px]">
-              <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Emergency</p>
+          <div className="flex flex-col gap-4 w-full md:flex-1">
+            <div className="bg-[#f5f0e6] p-4 md:p-6 rounded-[8px]">
+              <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[18px] md:text-[24px] tracking-[1.2px] uppercase mb-4">Emergency</p>
               {emergencyList.map((row) => (
                 <div key={row.label} className="flex justify-between items-center gap-4 py-3">
-                  <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[16px] whitespace-nowrap">{row.label}</p>
-                  <p className="font-['Source_Sans_Pro:SemiBold_Italic',sans-serif] italic text-[#1e1e1e] text-[16px] text-right shrink-0 whitespace-nowrap">{row.value}</p>
+                  <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[13px] md:text-[16px] md:whitespace-nowrap">{row.label}</p>
+                  <p className="font-['Source_Sans_Pro:SemiBold_Italic',sans-serif] italic text-[#1e1e1e] text-[13px] md:text-[16px] text-right shrink-0 md:whitespace-nowrap">{row.value}</p>
                 </div>
               ))}
             </div>
-            <div className="bg-[#f5f0e6] p-6 rounded-[8px]">
-              <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Building Management</p>
+            <div className="bg-[#f5f0e6] p-4 md:p-6 rounded-[8px]">
+              <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[18px] md:text-[24px] tracking-[1.2px] uppercase mb-4">Building Management</p>
               {buildingList.map((row) => (
                 <div key={row.label} className="flex justify-between items-center gap-4 py-3">
-                  <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[16px] whitespace-nowrap">{row.label}</p>
-                  <p className="font-['Source_Sans_Pro:SemiBold_Italic',sans-serif] italic text-[#1e1e1e] text-[16px] text-right shrink-0 whitespace-nowrap">{row.value}</p>
+                  <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[13px] md:text-[16px] md:whitespace-nowrap">{row.label}</p>
+                  <p className="font-['Source_Sans_Pro:SemiBold_Italic',sans-serif] italic text-[#1e1e1e] text-[13px] md:text-[16px] text-right shrink-0 md:whitespace-nowrap">{row.value}</p>
                 </div>
               ))}
             </div>
@@ -165,30 +165,30 @@ export default function ContactPage() {
   const { state } = useLocation();
   const openStaff = (state as { openStaff?: boolean } | null)?.openStaff ?? false;
   return (
-    <div className="bg-white min-w-[1440px] flex flex-col items-center">
+    <div className="bg-white w-full md:min-w-[1440px] flex flex-col items-center">
       <div className="sticky top-0 z-50">
         <NavBar />
       </div>
 
       {/* Hero */}
-      <div className="relative h-[400px] w-[1440px] overflow-hidden flex items-center justify-center">
+      <div className="relative w-full md:w-[1440px] h-[220px] md:h-[400px] overflow-hidden flex items-center justify-center">
         <div className="flex-none rotate-90">
           <div className="h-[1440px] relative w-[427px]">
             <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgGradient} />
           </div>
         </div>
-        <p className="absolute font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[80px] text-white tracking-[4.8px] uppercase text-center w-[880px]">Contacts</p>
+        <p className="absolute font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[32px] md:text-[80px] text-white tracking-[1.6px] md:tracking-[4.8px] uppercase text-center w-full md:w-[880px] px-4">Contacts</p>
       </div>
 
       {/* Dropdowns */}
-      <div className="flex flex-col items-center gap-[71px] py-12 bg-white">
+      <div className="flex flex-col items-center w-full gap-[71px] py-12 px-4 md:px-0 bg-white">
         <StaffDropdown initialOpen={openStaff} />
         <ContactsDropdown />
       </div>
 
       {/* Footer */}
-      <div className="bg-[#182b49] h-[141px] w-[1440px] flex flex-col items-center justify-center gap-3 mt-auto">
-        <p className="capitalize font-['Source_Sans_Pro:SemiBold',sans-serif] text-[14px] text-center text-white tracking-[0.7px]">The Design Lab at UC San Diego | 9500 Gilman Drive, MC0425, La Jolla, CA 92093</p>
+      <div className="bg-[#182b49] w-full md:w-[1440px] h-auto md:h-[141px] py-6 md:py-0 px-4 flex flex-col items-center justify-center gap-3 mt-auto">
+        <p className="capitalize font-['Source_Sans_Pro:SemiBold',sans-serif] text-[12px] md:text-[14px] text-center text-white tracking-[0.7px]">The Design Lab at UC San Diego | 9500 Gilman Drive, MC0425, La Jolla, CA 92093</p>
         <div className="h-[29px] w-[97px]">
           <img alt="Design Lab" className="object-contain size-full" src={imgWhiteDlAbLogo1} />
         </div>
