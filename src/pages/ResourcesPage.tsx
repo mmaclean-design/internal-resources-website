@@ -237,7 +237,7 @@ function DibRoomReservationDropdown({ initialOpen = false }: { initialOpen?: boo
   const [open, setOpen] = useState(initialOpen);
   return (
     <div className="w-[1100px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] rounded-[8px] overflow-hidden">
-      <DropdownHeader title="DIB Room Reservation" open={open} onToggle={() => setOpen(!open)} />
+      <DropdownHeader title="Additional Room Reservations" open={open} onToggle={() => setOpen(!open)} />
       {open && (
         <div className="bg-white flex flex-col gap-[5px] pt-[5px] pb-6">
           {/* Room calendar preview boxes */}
@@ -289,12 +289,12 @@ function DibRoomReservationDropdown({ initialOpen = false }: { initialOpen?: boo
                 DIB Event Space &amp; Conference Room Reservations
               </p>
               <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#182b49] text-[18px] tracking-[0.9px] leading-[1.4]">
-                Event space and general-use conference rooms in the Design/Innovation Building (DIB) are managed by the DIB Building Manager. Please utilize the provided form for space reservation requests.
+                Event space and general-use conference rooms in the Design/Innovation Building (DIB) are reserved through the Operations Team. Please utilize the provided form for space reservation requests for 306 &amp; 307.
               </p>
             </div>
             <div className="bg-[#f5f0e6] flex items-center justify-center px-8">
               <a
-                href="https://sites.google.com/ucsd.edu/dib-room-reservations/dib-venue-space-request-submission-form?authuser=0"
+                href="https://docs.google.com/forms/d/1nqCa45x2DGsrMr6WnbLlkaqb9ynXvuM_In0T1RCQwIM/edit?usp=sharing_eil&ts=6a5a85ab"
                 target="_blank"
                 rel="noreferrer"
                 className="relative h-[44px] w-[343px]"
@@ -303,7 +303,7 @@ function DibRoomReservationDropdown({ initialOpen = false }: { initialOpen?: boo
                   <path d={btnPath} fill="#00629B" />
                 </svg>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="font-['Source_Sans_Pro:Bold',sans-serif] text-[18px] text-center text-white tracking-[0.9px] uppercase">DIB Room Reservation Form</p>
+                  <p className="font-['Source_Sans_Pro:Bold',sans-serif] text-[18px] text-center text-white tracking-[0.9px] uppercase">Ops Request Form</p>
                 </div>
               </a>
             </div>
