@@ -142,17 +142,17 @@ export default function HomePage() {
           <div className="flex gap-4">
             <a href="https://forms.gle/oU2Xx2kkzgMyYqdB8" target="_blank" rel="noreferrer" className="cursor-pointer">
               <div className="bg-[#00629b] h-[174px] rounded-[10px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] w-[252px] flex items-center justify-center p-4">
-                <p className="capitalize font-['Source_Sans_Pro:Bold',sans-serif] text-[#f5f0e6] text-[24px] text-center tracking-[1.2px] w-[184px]">OPS REQUEST FORM</p>
+                <p className="capitalize font-['Source_Sans_Pro:Bold',sans-serif] text-[#ffffff] text-[24px] text-center tracking-[1.2px] w-[184px]">OPS REQUEST FORM</p>
               </div>
             </a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSd87N57bpfJCcK5tKX82pt3Uh0c8Vo8DoCh-LC6hAR54N7DaA/viewform?usp=sharing" target="_blank" rel="noreferrer" className="cursor-pointer">
               <div className="bg-[#00629b] h-[174px] rounded-[10px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] w-[252px] flex items-center justify-center p-4">
-                <p className="capitalize font-['Source_Sans_Pro:Bold',sans-serif] text-[#f5f0e6] text-[24px] text-center tracking-[1.2px] w-[184px]">ACCESS REQUEST FORM</p>
+                <p className="capitalize font-['Source_Sans_Pro:Bold',sans-serif] text-[#ffffff] text-[24px] text-center tracking-[1.2px] w-[184px]">ACCESS REQUEST FORM</p>
               </div>
             </a>
             <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:68698f1c-bb29-4cfc-b1c0-ce4a404fa764" target="_blank" rel="noreferrer" className="cursor-pointer">
               <div className="bg-[#00629b] h-[174px] rounded-[10px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] w-[252px] flex items-center justify-center p-4">
-                <p className="capitalize font-['Source_Sans_Pro:Bold',sans-serif] text-[#f5f0e6] text-[24px] text-center tracking-[1.2px] w-[184px]">BRAND GUIDELINES</p>
+                <p className="capitalize font-['Source_Sans_Pro:Bold',sans-serif] text-[#ffffff] text-[24px] text-center tracking-[1.2px] w-[184px]">BRAND GUIDELINES</p>
               </div>
             </a>
           </div>
@@ -161,17 +161,17 @@ export default function HomePage() {
           <div className="flex gap-4">
             <button onClick={() => navigate("/resources")} className="cursor-pointer">
               <div className="bg-[#00629b] h-[174px] rounded-[10px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] w-[252px] flex items-center justify-center p-4">
-                <p className="capitalize font-['Source_Sans_Pro:Bold',sans-serif] text-[#f5f0e6] text-[24px] text-center tracking-[1.2px] w-[184px]">SPACE RESOURCES</p>
+                <p className="capitalize font-['Source_Sans_Pro:Bold',sans-serif] text-[#ffffff] text-[24px] text-center tracking-[1.2px] w-[184px]">SPACE RESOURCES</p>
               </div>
             </button>
             <button onClick={() => navigate("/contact", { state: { openStaff: true } })} className="cursor-pointer">
               <div className="bg-[#00629b] h-[174px] rounded-[10px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] w-[252px] flex items-center justify-center p-4">
-                <p className="capitalize font-['Source_Sans_Pro:Bold',sans-serif] text-[#f5f0e6] text-[24px] text-center tracking-[1.2px] w-[184px]">STAFF DIRECTORY</p>
+                <p className="capitalize font-['Source_Sans_Pro:Bold',sans-serif] text-[#ffffff] text-[24px] text-center tracking-[1.2px] w-[184px]">STAFF DIRECTORY</p>
               </div>
             </button>
             <a href="https://docs.google.com/document/d/1hDkawsiCSmUZG4NZ3R6ScbcNM9HIFQXKqTBE6k5BYko/edit?tab=t.0" target="_blank" rel="noreferrer" className="cursor-pointer">
               <div className="bg-[#00629b] h-[174px] rounded-[10px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] w-[252px] flex items-center justify-center p-4">
-                <p className="capitalize font-['Source_Sans_Pro:Bold',sans-serif] text-[#f5f0e6] text-[24px] text-center tracking-[1.2px] w-[184px]">POSTING POLICY</p>
+                <p className="capitalize font-['Source_Sans_Pro:Bold',sans-serif] text-[#ffffff] text-[24px] text-center tracking-[1.2px] w-[184px]">POSTING POLICY</p>
               </div>
             </a>
           </div>
