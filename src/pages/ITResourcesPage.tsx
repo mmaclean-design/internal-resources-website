@@ -69,7 +69,7 @@ function PrinterDropdown() {
             <p className="font-['Source_Sans_Pro:Light',sans-serif] text-black text-[21px] mb-2">
               Please limit printing jobs to Design Lab related projects and work. Printers should not be used for personal projects or unrelated coursework. Ask an Ambassador for extra supplies and assistance.
             </p>
-            <p className="font-['Source_Sans_Pro:Light',sans-serif] text-black text-[20px]">
+            <p className="font-['Source_Sans_Pro:Light',sans-serif] text-black text-[21px]">
               Please note that large files will take a few to several minutes to print. To speed up the print job, you may need to change your file format (e.g. PDF to JPG).
             </p>
           </div>
@@ -117,7 +117,7 @@ function EthernetDropdown() {
         <div className="bg-white p-4 flex flex-col gap-4">
           <div className="bg-[#f5f0e6] p-6 rounded-[8px]">
             <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-black text-[24px] tracking-[1.2px] uppercase mb-4">Step 1: Request Ethernet Port Activation</p>
-            <p className="font-['Source_Sans_Pro:Light',sans-serif] text-black text-[20px] mb-4">
+            <p className="font-['Source_Sans_Pro:Light',sans-serif] text-black text-[21px] mb-4">
               Please refer to the following instructions for requesting ethernet port activation in Design Lab offices and project spaces:
             </p>
             <ol className="font-['Source_Sans_Pro:Light',sans-serif] text-black text-[21px] list-decimal pl-8">

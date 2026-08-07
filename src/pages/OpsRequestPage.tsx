@@ -31,7 +31,7 @@ function OpsEventSupportDropdown() {
         <div className="bg-white p-4 flex gap-4">
           <div className="bg-[#f5f0e6] flex-1 p-6 rounded-[8px]">
             <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-black text-[24px] tracking-[1.2px] uppercase mb-4">Design Lab Operations Event Support Request</p>
-            <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-black text-[21px] tracking-[1.06px] mb-4">
+            <p className="font-['Source_Sans_Pro:Light',sans-serif] text-black text-[21px] mb-4">
               The Design Lab Operations team provides event support for Design Lab affiliated events hosted in the DIB. Submit a request to inquire about available support for your event.
             </p>
           </div>

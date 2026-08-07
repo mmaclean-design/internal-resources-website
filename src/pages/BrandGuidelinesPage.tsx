@@ -43,7 +43,7 @@ function BrandAssetsDropdown() {
           </a>
           <div className="bg-[#f5f0e6] flex-1 p-6 rounded-[8px]">
             <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Brand Downloads</p>
-            <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[20px] tracking-[1px] mb-8">
+            <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[21px] mb-8">
               Design Lab Members may want to utilize the following branded assets and templates:
             </p>
             <div className="flex justify-center">

@@ -157,11 +157,11 @@ function RoomReservationDropdown({ initialOpen = false }: { initialOpen?: boolea
         <div className="bg-white flex flex-col gap-[5px] pt-[5px] pb-6">
           {/* Reservation timeline info block */}
           <div className="bg-[#f5f0e6] mx-[1px] px-7 py-5">
-            <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#182b49] text-[24px] tracking-[1.2px] uppercase mb-3">Reservation Request Timeline</p>
-            <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#182b49] text-[20px] tracking-[1.0624px] leading-[1.174]">
+            <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#182b49] text-[24px] tracking-[1.2px] uppercase mb-3">Reservation Request Timeline</p>
+            <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#182b49] text-[21px] leading-[1.174]">
               Conference Room reservation requests must be submitted a minimum of two (2) business days prior to the requested reservation date. Upon successful form submission, an email confirmation will be provided within one (1) business day.
             </p>
-            <p className="font-['Source_Sans_Pro:SemiBold_Italic',sans-serif] italic text-[#182b49] text-[20px] tracking-[1.0624px] leading-[1.174] mt-3">
+            <p className="font-['Source_Sans_Pro:Light',sans-serif] italic text-[#182b49] text-[21px] leading-[1.174] mt-3">
               Conference rooms are subject to availability, please review the room calendars below prior to submitting a reservation request.
             </p>
           </div>
@@ -243,10 +243,10 @@ function DibRoomReservationDropdown({ initialOpen = false }: { initialOpen?: boo
           {/* Info block + button */}
           <div className="flex gap-[5px] items-stretch">
             <div className="bg-[#f5f0e6] flex-1 px-6 py-5">
-              <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#182b49] text-[20px] tracking-[1.0624px] uppercase mb-3">
+              <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#182b49] text-[24px] tracking-[1.2px] uppercase mb-3">
                 DIB Event Space &amp; Conference Room Reservations
               </p>
-              <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#182b49] text-[18px] tracking-[0.9px] leading-[1.4]">
+              <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#182b49] text-[21px] leading-[1.4]">
                 Event space and general-use conference rooms in the Design/Innovation Building (DIB) are reserved through the Operations Team. Please utilize the provided form for space reservation requests for 306 &amp; 307.
               </p>
             </div>

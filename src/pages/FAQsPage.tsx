@@ -55,7 +55,7 @@ export default function FAQsPage() {
         {/* FAQ 1: How can I stay updated on events? */}
         <FaqItem question="How can I stay updated on Design Lab events?">
           <div className="bg-[#f5f0e6] p-6 rounded-[8px]">
-            <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] mb-4">Design Lab Calendar</p>
+            <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Design Lab Calendar</p>
             <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[21px] mb-6">
               The Design Lab maintains a shared Google Calendar for all recurring and special events. Subscribe to stay up-to-date with lab happenings.
             </p>
@@ -96,7 +96,7 @@ export default function FAQsPage() {
         {/* FAQ 2: Conference Room without reservation */}
         <FaqItem question="Can I use a Design Lab Conference Room without a reservation?">
           <div className="bg-[#f5f0e6] p-6 rounded-[8px]">
-            <p className="font-['Source_Sans_Pro:Regular',sans-serif] text-[#1e1e1e] text-[21px]">
+            <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[21px]">
               Design Lab Conference Rooms are available for drop-in needs when not in-use by an existing reservation. Please note that reservations take priority for room usage, and occupants may be requested to vacate to honor a reservation. Refer to the Design Lab Conference Room page for the reservation request form and room calendars.
             </p>
           </div>
@@ -105,7 +105,7 @@ export default function FAQsPage() {
         {/* FAQ 3: Access to DIB and Project Space */}
         <FaqItem question="How do I gain access to the DIB and my Design Lab Project Space?">
           <div className="bg-[#f5f0e6] p-6 rounded-[8px]">
-            <p className="font-['Source_Sans_Pro:Regular',sans-serif] text-[#1e1e1e] text-[21px]">
+            <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[21px]">
               Affiliated Design Lab faculty, researchers, and students may request access to the Design Lab. Access is granted through the individual's UC San Diego Campus Card. Please review Space Resources for further instructions.
             </p>
           </div>
@@ -116,14 +116,14 @@ export default function FAQsPage() {
           <div className="flex flex-col gap-4">
             <div className="flex gap-4">
               <div className="bg-[#f5f0e6] flex-1 p-6 rounded-[8px]">
-                <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Undergraduate Access</p>
+                <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Undergraduate Access</p>
                 <ul className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[21px] list-disc pl-8 space-y-2">
                   <li>DIB main entrance and elevator (daily, 8:00am - 6:00pm)</li>
                   <li>Access to a Project Space is only provided if the undergraduate student will be engaged long-term (1 year or more) in a project and is approved by Project Space Leads.</li>
                 </ul>
               </div>
               <div className="bg-[#f5f0e6] flex-1 p-6 rounded-[8px]">
-                <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Visiting Scholars and Research Staff</p>
+                <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Visiting Scholars and Research Staff</p>
                 <ul className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[21px] list-disc pl-8 space-y-2">
                   <li>DIB main entrance and elevators, 24/7</li>
                   <li>Specific Design Lab Project Space (pending approval by Faculty Advisor and/or Project Space Lead)</li>
@@ -135,7 +135,7 @@ export default function FAQsPage() {
             </div>
             <div className="flex gap-4">
               <div className="bg-[#f5f0e6] flex-1 p-6 rounded-[8px]">
-                <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Graduate and Post Doc Access</p>
+                <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Graduate and Post Doc Access</p>
                 <ul className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[21px] list-disc pl-8 space-y-2">
                   <li>DIB main entrance and elevators, 24/7</li>
                   <li>Specific Design Lab Project Space (pending approval by Faculty Advisor and/or Project Space Lead)</li>
@@ -145,7 +145,7 @@ export default function FAQsPage() {
                 </ul>
               </div>
               <div className="bg-[#f5f0e6] flex-1 p-6 rounded-[8px]">
-                <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Faculty Access</p>
+                <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Faculty Access</p>
                 <ul className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[21px] list-disc pl-8 space-y-2">
                   <li>DIB main entrance and elevators, 24/7</li>
                   <li>Assigned Design Lab Project Space (access to additional project spaces require approval by the Design Lab Director's Office)</li>
@@ -156,7 +156,7 @@ export default function FAQsPage() {
               </div>
             </div>
             <div className="bg-[#f5f0e6] p-6 rounded-[8px]">
-              <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Access Request</p>
+              <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[24px] tracking-[1.2px] uppercase mb-4">Access Request</p>
               <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[21px] mb-6">
                 Affiliated Design Lab faculty, researchers, and students may request access to the Design Lab. Access is granted through the individual's{" "}
                 <span className="underline cursor-pointer">UC San Diego Campus Card</span>.
@@ -183,7 +183,7 @@ export default function FAQsPage() {
               <p className="font-['Source_Sans_Pro:Light',sans-serif] text-black text-[21px] mb-2">
                 Please limit printing jobs to Design Lab related projects and work. Printers should not be used for personal projects or unrelated coursework. Ask an Ambassador for extra supplies and assistance.
               </p>
-              <p className="font-['Source_Sans_Pro:Light',sans-serif] text-black text-[20px]">
+              <p className="font-['Source_Sans_Pro:Light',sans-serif] text-black text-[21px]">
                 Please note that large files will take a few to several minutes to print. To speed up the print job, you may need to change your file format (e.g. PDF to JPG).
               </p>
             </div>
