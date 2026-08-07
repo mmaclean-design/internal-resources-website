@@ -45,27 +45,30 @@
   src: url('https://static.figma.com/font/SourceSansPro-SemiBoldItalic_2') format('woff2');
 }
 
-/* Refrigerator Deluxe — not available; use Barlow Condensed ExtraBold as fallback */
+/* Refrigerator Deluxe — served via Adobe Fonts (use.typekit.net/iwu3rvm.css) */
 @font-face {
   font-family: 'Refrigerator Deluxe:ExtraBold';
   font-style: normal;
   font-weight: 800;
-  src: local('Barlow Condensed ExtraBold'), local('BarlowCondensed-ExtraBold'),
-       url('https://fonts.gstatic.com/s/barlowcondensed/v12/HTxwL3I-JCGChYJ8VI-L6OO_au7B6xTr13GRhU6Nhg.woff2') format('woff2');
+  src: url('https://use.typekit.net/af/069b29/00000000000000007735955d/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3') format('woff2'),
+       url('https://use.typekit.net/af/069b29/00000000000000007735955d/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3') format('woff'),
+       url('https://use.typekit.net/af/069b29/00000000000000007735955d/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3') format('opentype');
 }
 @font-face {
   font-family: 'Refrigerator Deluxe:Extrabold';
   font-style: normal;
   font-weight: 800;
-  src: local('Barlow Condensed ExtraBold'), local('BarlowCondensed-ExtraBold'),
-       url('https://fonts.gstatic.com/s/barlowcondensed/v12/HTxwL3I-JCGChYJ8VI-L6OO_au7B6xTr13GRhU6Nhg.woff2') format('woff2');
+  src: url('https://use.typekit.net/af/069b29/00000000000000007735955d/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3') format('woff2'),
+       url('https://use.typekit.net/af/069b29/00000000000000007735955d/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3') format('woff'),
+       url('https://use.typekit.net/af/069b29/00000000000000007735955d/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3') format('opentype');
 }
 @font-face {
   font-family: 'Refrigerator Deluxe:Light';
   font-style: normal;
-  font-weight: 200;
-  src: local('Barlow Condensed ExtraLight'), local('BarlowCondensed-ExtraLight'),
-       url('https://fonts.gstatic.com/s/barlowcondensed/v12/HTx3L3I-JCGChYJ8VI-L6OO_au7B47xwW-Ad3aI.woff2') format('woff2');
+  font-weight: 300;
+  src: url('https://use.typekit.net/af/580a02/000000000000000077359552/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3') format('woff2'),
+       url('https://use.typekit.net/af/580a02/000000000000000077359552/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3') format('woff'),
+       url('https://use.typekit.net/af/580a02/000000000000000077359552/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3') format('opentype');
 }
 
 html, body, #root {
