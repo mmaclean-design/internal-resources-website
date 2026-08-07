@@ -1,7 +1,6 @@
 import { useState } from "react";
 import NavBar from "@/components/NavBar";
 import imgGradient from "@/imports/Faq/e7b864d9e1a800659a00414048067b89c1a2232f.png";
-import imgCalendar from "@/imports/Faq/8f8ea29314c1b093be94352a5d13f19d848cf75e.png";
 import imgWhiteDlAbLogo1 from "@/imports/Faq/c8b9d6f8944bd1fd45b800dedfe054568c29db87.png";
 import svgPaths from "@/imports/Faq/svg-rtmwrvp4u1";
 
@@ -60,18 +59,36 @@ export default function FAQsPage() {
             <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[21px] mb-6">
               The Design Lab maintains a shared Google Calendar for all recurring and special events. Subscribe to stay up-to-date with lab happenings.
             </p>
-            <div className="bg-white rounded-[26px] overflow-hidden mb-6 h-[346px] max-w-[848px] mx-auto">
-              <img alt="Calendar" className="w-full h-full object-cover" src={imgCalendar} />
+            <div className="relative bg-white rounded-[26px] overflow-hidden mb-6 h-[346px] max-w-[848px] mx-auto">
+              <iframe
+                src="https://calendar.google.com/calendar/embed?src=ucsd.edu_vbnavb6gt92esd8or5geqkctdc%40group.calendar.google.com&ctz=America%2FLos_Angeles&color=%23d06b64"
+                className="w-full h-full border-0"
+                frameBorder={0}
+                scrolling="no"
+                title="Design Lab Calendar"
+              />
+              <a
+                href="https://calendar.google.com/calendar/u/0/newembed?color=%23d06b64&src=ucsd.edu_vbnavb6gt92esd8or5geqkctdc@group.calendar.google.com"
+                target="_blank"
+                rel="noreferrer"
+                className="absolute inset-0 z-10"
+                aria-label="Open Design Lab Calendar"
+              />
             </div>
             <div className="flex justify-center">
-              <button className="relative h-[44px] w-[360px]">
+              <a
+                href="https://calendar.google.com/calendar/ical/ucsd.edu_vbnavb6gt92esd8or5geqkctdc%40group.calendar.google.com/public/basic.ics"
+                target="_blank"
+                rel="noreferrer"
+                className="relative h-[44px] w-[360px]"
+              >
                 <svg className="absolute inset-0 size-full" fill="none" height="44" preserveAspectRatio="none" viewBox="0 0 360.15 44" width="360.15">
                   <path d={subBtnPath} fill="#00629B" />
                 </svg>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <p className="font-['Source_Sans_Pro:Bold',sans-serif] text-[20px] text-center text-white tracking-[1px] uppercase">subscribe To Calendar</p>
                 </div>
-              </button>
+              </a>
             </div>
           </div>
         </FaqItem>
