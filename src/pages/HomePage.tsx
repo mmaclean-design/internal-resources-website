@@ -93,7 +93,7 @@ export default function HomePage() {
         </div>
 
         {/* Calendar embed */}
-        <div className="absolute left-[61px] top-[119px] bg-[#1d355a] h-[410px] w-[845px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
+        <div className="absolute left-[61px] top-[119px] bg-[#1d355a] h-[410px] w-[890px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
           <div className="absolute left-[30px] top-[32px] w-[830px] h-[346px] rounded-[26px] overflow-hidden">
             <iframe
               src="https://calendar.google.com/calendar/embed?src=ucsd.edu_vbnavb6gt92esd8or5geqkctdc%40group.calendar.google.com&ctz=America%2FLos_Angeles&color=%23d06b64"
