@@ -277,7 +277,7 @@ export default function ResourcesPage() {
   const openReservations = (state as { openReservations?: boolean } | null)?.openReservations ?? false;
   return (
     <div className="bg-white w-full md:min-w-[1440px] flex flex-col items-center">
-      <div className="sticky top-0 z-50">
+      <div className="sticky top-0 z-50 w-full">
         <NavBar />
       </div>
 
