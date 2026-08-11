@@ -26,7 +26,7 @@ function DropdownHeader({ title, open, onToggle }: { title: string; open: boolea
   return (
     <button
       onClick={onToggle}
-      className="w-full bg-[#00629b] h-[56px] md:h-[70px] flex items-center justify-between px-4 md:px-7 drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] cursor-pointer"
+      className="w-full bg-[#00629b] h-[56px] md:h-[70px] flex items-center justify-between px-4 md:px-7 cursor-pointer"
     >
       <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[18px] md:text-[35px] text-left text-white tracking-[0.9px] md:tracking-[1.7px] uppercase">{title}</p>
       <Chevron open={open} />
