@@ -80,7 +80,7 @@ location.pathname.startsWith("/ops");
     </div>
 
     {/* Mobile */}
-    <div className="flex md:hidden bg-[#182b49] w-full h-[64px] items-center justify-between px-4 gap-3">
+    <div className="flex md:hidden bg-[#182b49] w-full h-[64px] items-center justify-between px-4 gap-3 relative">
       <img
         alt="Design Lab"
         className="h-[42px] w-[42px] object-cover cursor-pointer shrink-0"
@@ -94,12 +94,36 @@ location.pathname.startsWith("/ops");
         >
           Home
         </button>
-        <button
-          onClick={() => navigate("/resources")}
-          className={`font-['Source_Sans_Pro:SemiBold',sans-serif] text-[11px] tracking-[0.5px] uppercase cursor-pointer whitespace-nowrap ${resourcesActive ? "text-[#00c6d7]" : "text-white"}`}
-        >
-          Resources
-        </button>
+        <div className="relative">
+          <button
+            onClick={() => setResourcesOpen(!resourcesOpen)}
+            className={`flex items-center gap-1 font-['Source_Sans_Pro:SemiBold',sans-serif] text-[11px] tracking-[0.5px] uppercase cursor-pointer whitespace-nowrap ${resourcesActive ? "text-[#00c6d7]" : "text-white"}`}
+          >
+            Resources
+            <svg
+              width="8"
+              height="8"
+              viewBox="0 0 27 27"
+              fill="none"
+              className={`transition-transform duration-200 shrink-0 ${resourcesOpen ? "rotate-180" : ""}`}
+            >
+              <path d="M3 9L13.5 19L24 9" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+          {resourcesOpen && (
+            <div className="absolute top-full right-0 mt-3 bg-[#182b49] min-w-[190px] py-4 px-5 z-50 rounded-[4px] drop-shadow-[0px_4px_8px_rgba(0,0,0,0.35)]">
+              {resourcesSubpages.map((item) => (
+                <button
+                  key={item.path}
+                  onClick={() => { navigate(item.path); setResourcesOpen(false); }}
+                  className={`block w-full text-left font-['Source_Sans_Pro:Regular',sans-serif] text-[13px] tracking-[0.6px] uppercase py-2.5 cursor-pointer whitespace-nowrap ${active(item.path) ? "text-[#00c6d7]" : "text-white"}`}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
         <button
           onClick={() => navigate("/contact")}
           className={`font-['Source_Sans_Pro:SemiBold',sans-serif] text-[11px] tracking-[0.5px] uppercase cursor-pointer whitespace-nowrap ${active("/contact") ? "text-[#00c6d7]" : "text-white"}`}
