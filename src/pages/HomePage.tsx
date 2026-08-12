@@ -305,7 +305,7 @@ export default function HomePage() {
 
       {/* Quick Access Block */}
       <div className="bg-[#182b49] w-full px-6 py-10 flex flex-col gap-6">
-        <div className="text-right">
+        <div>
           <p className="capitalize font-['Source_Sans_Pro:SemiBold',sans-serif] text-[16px] text-white tracking-[0.8px]">Quick Access</p>
           <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#ffcd00] text-[32px] tracking-[1.6px] uppercase">Resources</p>
         </div>
