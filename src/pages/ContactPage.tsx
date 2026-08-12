@@ -59,10 +59,10 @@ function StaffCard({ member }: { member: StaffMember }) {
       <div className="shrink-0 h-[110px] w-[110px] md:h-[214px] md:w-[215px] rounded-[7px] overflow-hidden">
         <img alt={member.name} className="size-full object-cover rounded-[7px]" src={member.img} />
       </div>
-      <div className="flex flex-col justify-center">
-        <p className="font-['Source_Sans_Pro:Bold',sans-serif] text-[20px] md:text-[32px] text-white tracking-[1.6px] uppercase leading-tight">{member.name}</p>
-        <p className="font-['Source_Sans_Pro:Italic',sans-serif] text-[16px] md:text-[26px] italic text-white tracking-[1.3px] leading-tight mt-1">{member.title}</p>
-        <div className="mt-3 font-['Source_Sans_Pro:Regular',sans-serif] text-[14px] md:text-[19px] text-white tracking-[0.98px]">
+      <div className="flex flex-col justify-center min-w-0">
+        <p className="font-['Source_Sans_Pro:Bold',sans-serif] text-[16px] md:text-[19px] text-white tracking-[1px] uppercase leading-tight md:whitespace-nowrap">{member.name}</p>
+        <p className="font-['Source_Sans_Pro:Italic',sans-serif] text-[13px] md:text-[16px] italic text-white tracking-[0.8px] leading-tight mt-1">{member.title}</p>
+        <div className="mt-3 font-['Source_Sans_Pro:Regular',sans-serif] text-[12px] md:text-[14px] text-white tracking-[0.7px]">
           {member.email && <p className="underline cursor-pointer">{member.email}</p>}
           {member.office && <p>{member.office}</p>}
         </div>
