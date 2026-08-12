@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <>
     {/* Desktop */}
-    <div className="hidden md:flex bg-white min-w-[1440px] flex-col items-center">
+    <div className="hidden md:flex bg-white min-w-[1440px] min-h-screen flex-col items-center">
       {/* NavBar */}
       <div className="sticky top-0 z-50">
         <NavBar />
@@ -181,7 +181,7 @@ export default function HomePage() {
       </div>
 
       {/* Footer */}
-      <div className="bg-[#182b49] h-[141px] w-[1440px] flex flex-col items-center justify-center gap-3">
+      <div className="bg-[#182b49] h-[141px] w-[1440px] flex flex-col items-center justify-center gap-3 mt-auto">
         <p className="capitalize font-['Source_Sans_Pro:SemiBold',sans-serif] text-[14px] text-center text-white tracking-[0.7px]">The Design Lab at UC San Diego | 9500 Gilman Drive, MC0425, La Jolla, CA 92093</p>
         <div className="h-[29px] w-[97px]">
           <img alt="Design Lab" className="object-contain size-full" src={imgWhiteDlAbLogo1} />
@@ -190,7 +190,7 @@ export default function HomePage() {
     </div>
 
     {/* Mobile */}
-    <div className="flex md:hidden bg-white flex-col items-center w-full">
+    <div className="flex md:hidden bg-white min-h-screen flex-col items-center w-full">
       {/* NavBar */}
       <div className="sticky top-0 z-50 w-full">
         <NavBar />
@@ -345,7 +345,7 @@ export default function HomePage() {
       </div>
 
       {/* Footer */}
-      <div className="bg-[#182b49] w-full px-6 py-8 flex flex-col items-center justify-center gap-3">
+      <div className="bg-[#182b49] w-full px-6 py-8 flex flex-col items-center justify-center gap-3 mt-auto">
         <p className="capitalize font-['Source_Sans_Pro:SemiBold',sans-serif] text-[13px] text-center text-white tracking-[0.6px]">The Design Lab at UC San Diego | 9500 Gilman Drive, MC0425, La Jolla, CA 92093</p>
         <div className="h-[24px] w-[80px]">
           <img alt="Design Lab" className="object-contain size-full" src={imgWhiteDlAbLogo1} />

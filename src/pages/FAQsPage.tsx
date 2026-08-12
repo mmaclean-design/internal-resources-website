@@ -38,7 +38,7 @@ function FaqItem({ question, children }: FaqItemProps) {
 
 export default function FAQsPage() {
   return (
-    <div className="bg-white w-full md:min-w-[1440px] flex flex-col items-center">
+    <div className="bg-white w-full md:min-w-[1440px] min-h-screen flex flex-col items-center">
       <div className="sticky top-0 z-50 w-full">
         <NavBar />
       </div>
