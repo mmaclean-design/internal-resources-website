@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import NavBar from "@/components/NavBar";
-import imgHero1 from "@/imports/Home/eb6995f244e8a72d86a044b6cbd2c01d26c0f283.png";
+import imgHero1 from "@/imports/Home/hero-aurora.png";
 import imgWhiteDlAbLogo1 from "@/imports/Home/c8b9d6f8944bd1fd45b800dedfe054568c29db87.png";
 import svgPaths from "@/imports/Home/svg-mp1aneno70";
 
