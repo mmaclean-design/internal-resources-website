@@ -159,7 +159,7 @@ export default function FAQsPage() {
               <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[18px] md:text-[24px] tracking-[1.2px] uppercase mb-4">Access Request</p>
               <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[15px] md:text-[21px] mb-6">
                 Affiliated Design Lab faculty, researchers, and students may request access to the Design Lab. Access is granted through the individual's{" "}
-                <span className="underline cursor-pointer">UC San Diego Campus Card</span>.
+                <a href="https://blink.ucsd.edu/HR/services/new/cards/" target="_blank" rel="noreferrer" className="underline cursor-pointer">UC San Diego Campus Card</a>.
               </p>
               <div className="flex justify-center">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSd87N57bpfJCcK5tKX82pt3Uh0c8Vo8DoCh-LC6hAR54N7DaA/viewform?usp=sharing" target="_blank" rel="noreferrer" className="relative h-[44px] w-full max-w-[343px] md:w-[343px]">

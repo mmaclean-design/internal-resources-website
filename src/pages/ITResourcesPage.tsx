@@ -122,12 +122,14 @@ function EthernetDropdown() {
             </p>
             <ol className="font-['Source_Sans_Pro:Light',sans-serif] text-black text-[15px] md:text-[21px] list-decimal pl-8">
               <li>
-                Submit a UC San Diego Telecom <span className="underline cursor-pointer">Customer Service Request (CSR)</span>. For the following fields, enter:
+                Submit a UC San Diego Telecom <a href="https://act.ucsd.edu/telecom/csr" target="_blank" rel="noreferrer" className="underline cursor-pointer">Customer Service Request (CSR)</a>. For the following fields, enter:
                 <br />- Department Name: The Design Lab
                 <br />- Mail Code: 0425
                 <br />- Provide appropriate Project-Task-Fund (P-T-F) information.
-                <br />a) For Design Lab faculty offices, please contact the Design Lab Operations Team (<span className="underline cursor-pointer">dlab-ops@ucsd.edu</span>) with this request
-                <br />b) For Project Spaces, individual faculty/home department funds should be utilized.
+                <div className="pl-6">
+                  a) For Design Lab faculty offices, please contact the Design Lab Operations Team (<a href="mailto:dlab-ops@ucsd.edu" className="underline cursor-pointer">dlab-ops@ucsd.edu</a>) with this request
+                  <br />b) For Project Spaces, individual faculty/home department funds should be utilized.
+                </div>
                 <br />- Under Service, select "Ethernet Connections"
                 <br /><br />For description request, include the following information:
                 <br />a) Location: Design/Innovation Building - Third Floor, Room XXX
