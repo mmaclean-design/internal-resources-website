@@ -65,7 +65,7 @@ function BrandAssetsDropdown() {
 
 export default function BrandGuidelinesPage() {
   return (
-    <div className="bg-white w-full md:min-w-[1440px] min-h-screen md:min-h-0 flex flex-col items-center">
+    <div className="bg-white w-full md:min-w-[1440px] min-h-screen flex flex-col items-center">
       <div className="sticky top-0 z-50 w-full">
         <NavBar />
       </div>
@@ -86,7 +86,7 @@ export default function BrandGuidelinesPage() {
       </div>
 
       {/* Footer */}
-      <div className="bg-[#182b49] h-auto md:h-[141px] py-6 md:py-0 w-full md:w-[1440px] flex-1 md:flex-none flex flex-col items-center justify-center gap-3 mt-auto px-4">
+      <div className="bg-[#182b49] w-full md:w-[1440px] h-auto md:h-[141px] py-6 md:py-0 px-4 flex flex-col items-center justify-center gap-3 mt-auto">
         <p className="capitalize font-['Source_Sans_Pro:SemiBold',sans-serif] text-[12px] md:text-[14px] text-center text-white tracking-[0.7px]">The Design Lab at UC San Diego | 9500 Gilman Drive, MC0425, La Jolla, CA 92093</p>
         <div className="h-[29px] w-[97px]">
           <img alt="Design Lab" className="object-contain size-full" src={imgWhiteDlAbLogo1} />
