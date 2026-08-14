@@ -154,9 +154,9 @@ function RoomReservationDropdown({ initialOpen = false }: { initialOpen?: boolea
     <div className="w-full md:w-[1100px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] rounded-[8px] overflow-hidden">
       <DropdownHeader title="Design Lab Room Reservation" open={open} onToggle={() => setOpen(!open)} />
       {open && (
-        <div className="bg-white flex flex-col gap-[5px] pt-[5px] pb-6">
+        <div className="bg-white p-4 flex flex-col gap-4">
           {/* Reservation timeline info block */}
-          <div className="bg-[#f5f0e6] mx-[1px] px-4 md:px-7 py-5">
+          <div className="bg-[#f5f0e6] rounded-[8px] px-4 md:px-7 py-5">
             <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#182b49] text-[18px] md:text-[24px] tracking-[1.2px] uppercase mb-3">Reservation Request Timeline</p>
             <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#182b49] text-[15px] md:text-[21px] leading-[1.174]">
               Conference Room reservation requests must be submitted a minimum of two (2) business days prior to the requested reservation date. Upon successful form submission, an email confirmation will be provided within one (1) business day.
@@ -167,13 +167,13 @@ function RoomReservationDropdown({ initialOpen = false }: { initialOpen?: boolea
           </div>
 
           {/* Room calendar blocks */}
-          <div className="flex flex-col md:flex-row gap-[5px]">
+          <div className="flex flex-col md:flex-row gap-4">
             {/* 311 */}
             <a
               href="https://calendar.google.com/calendar/embed?src=c_i5gqda41rr6oaop69ifnoajhmg%40group.calendar.google.com&ctz=America%2FLos_Angeles"
               target="_blank"
               rel="noreferrer"
-              className="bg-[#f5f0e6] w-full md:flex-1 h-[300px] md:h-[494px] relative overflow-hidden block"
+              className="bg-[#f5f0e6] rounded-[8px] w-full md:flex-1 h-[300px] md:h-[494px] relative overflow-hidden block"
             >
               <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#182b49] text-[21.248px] tracking-[1.0624px] uppercase absolute top-4 left-5 z-10">311</p>
               <div className="absolute inset-x-5 top-14 bottom-5 overflow-hidden">
@@ -192,7 +192,7 @@ function RoomReservationDropdown({ initialOpen = false }: { initialOpen?: boolea
               href="https://calendar.google.com/calendar/embed?src=c_36lmr3kbg5j68hfnes4tv745ek%40group.calendar.google.com&ctz=America%2FLos_Angeles"
               target="_blank"
               rel="noreferrer"
-              className="bg-[#f5f0e6] w-full md:flex-1 h-[300px] md:h-[494px] relative overflow-hidden block"
+              className="bg-[#f5f0e6] rounded-[8px] w-full md:flex-1 h-[300px] md:h-[494px] relative overflow-hidden block"
             >
               <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#182b49] text-[21.248px] tracking-[1.0624px] uppercase absolute top-4 left-5 z-10">361</p>
               <div className="absolute inset-x-5 top-14 bottom-5 overflow-hidden">
@@ -209,7 +209,7 @@ function RoomReservationDropdown({ initialOpen = false }: { initialOpen?: boolea
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-col md:flex-row items-center mt-5 justify-center gap-4 md:gap-x-[325px]">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-x-[325px]">
             <a href="https://script.google.com/a/macros/ucsd.edu/s/AKfycbzVW_BijuR04t-ih6PLpcc5Uoe7yKxZSriucf4WRPb60USsKdkFrbDLx5AeRMY6xienTA/exec" target="_blank" rel="noreferrer" className="relative h-[44px] w-full max-w-[343px] md:w-[343px]">
               <svg className="absolute inset-0 size-full" fill="none" height="44" preserveAspectRatio="none" viewBox="0 0 343 44" width="343">
                 <path d={btnPath} fill="#00629B" />
@@ -239,10 +239,10 @@ function DibRoomReservationDropdown({ initialOpen = false }: { initialOpen?: boo
     <div className="w-full md:w-[1100px] drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] rounded-[8px] overflow-hidden">
       <DropdownHeader title="Additional Room Reservations" open={open} onToggle={() => setOpen(!open)} />
       {open && (
-        <div className="bg-white flex flex-col gap-[5px] pt-[5px] pb-6">
+        <div className="bg-white p-4 flex flex-col gap-4">
           {/* Info block + button */}
-          <div className="flex flex-col md:flex-row gap-[5px] items-stretch">
-            <div className="bg-[#f5f0e6] flex-1 px-4 md:px-6 py-5">
+          <div className="flex flex-col md:flex-row gap-4 items-stretch">
+            <div className="bg-[#f5f0e6] rounded-[8px] flex-1 px-4 md:px-6 py-5">
               <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#182b49] text-[18px] md:text-[24px] tracking-[1.2px] uppercase mb-3">
                 DIB Event Space &amp; Conference Room Reservations
               </p>
@@ -250,7 +250,7 @@ function DibRoomReservationDropdown({ initialOpen = false }: { initialOpen?: boo
                 Event space and general-use conference rooms in the Design/Innovation Building (DIB) are reserved through the Operations Team. Please utilize the provided form for space reservation requests for 306 &amp; 307.
               </p>
             </div>
-            <div className="bg-[#f5f0e6] flex items-center justify-center px-8 py-4 md:py-0">
+            <div className="bg-[#f5f0e6] rounded-[8px] flex items-center justify-center px-8 py-4 md:py-0">
               <a
                 href="https://docs.google.com/forms/d/1nqCa45x2DGsrMr6WnbLlkaqb9ynXvuM_In0T1RCQwIM/edit?usp=sharing_eil&ts=6a5a85ab"
                 target="_blank"
