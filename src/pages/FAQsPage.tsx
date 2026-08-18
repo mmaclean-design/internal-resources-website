@@ -104,10 +104,29 @@ export default function FAQsPage() {
 
         {/* FAQ 3: Access to DIB and Project Space */}
         <FaqItem question="How do I gain access to the DIB and my Design Lab Project Space?">
-          <div className="bg-[#f5f0e6] p-4 md:p-6 rounded-[8px]">
-            <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[15px] md:text-[21px]">
-              Affiliated Design Lab faculty, researchers, and students may request access to the Design Lab. Access is granted through the individual's UC San Diego Campus Card. Please review Space Resources for further instructions.
-            </p>
+          <div className="flex flex-col gap-4">
+            <div className="bg-[#f5f0e6] p-4 md:p-6 rounded-[8px]">
+              <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[15px] md:text-[21px]">
+                Affiliated Design Lab faculty, researchers, and students may request access to the Design Lab. Access is granted through the individual's UC San Diego Campus Card. Please review Space Resources for further instructions.
+              </p>
+            </div>
+            <div className="bg-[#f5f0e6] p-4 md:p-6 rounded-[8px]">
+              <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[18px] md:text-[24px] tracking-[1.2px] uppercase mb-4">Access Request</p>
+              <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[15px] md:text-[21px] mb-6">
+                Affiliated Design Lab faculty, researchers, and students may request access to the Design Lab. Access is granted through the individual's{" "}
+                <a href="https://blink.ucsd.edu/HR/services/new/cards/" target="_blank" rel="noreferrer" className="underline cursor-pointer">UC San Diego Campus Card</a>.
+              </p>
+              <div className="flex justify-center">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd87N57bpfJCcK5tKX82pt3Uh0c8Vo8DoCh-LC6hAR54N7DaA/viewform?usp=sharing" target="_blank" rel="noreferrer" className="relative h-[44px] w-full max-w-[343px] md:w-[343px]">
+                  <svg className="absolute inset-0 size-full" fill="none" height="44" preserveAspectRatio="none" viewBox="0 0 343 44" width="343">
+                    <path d={btnPath} fill="#00629B" />
+                  </svg>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <p className="font-['Source_Sans_Pro:Bold',sans-serif] text-[20px] text-center text-white tracking-[1px] uppercase">Access Request Form</p>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </FaqItem>
 
@@ -153,23 +172,6 @@ export default function FAQsPage() {
                   <li>Design Lab Conference Rooms 311 & 361</li>
                   <li>Design Lab Graduate Student Workspace, Room 372</li>
                 </ul>
-              </div>
-            </div>
-            <div className="bg-[#f5f0e6] p-4 md:p-6 rounded-[8px]">
-              <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[18px] md:text-[24px] tracking-[1.2px] uppercase mb-4">Access Request</p>
-              <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[15px] md:text-[21px] mb-6">
-                Affiliated Design Lab faculty, researchers, and students may request access to the Design Lab. Access is granted through the individual's{" "}
-                <a href="https://blink.ucsd.edu/HR/services/new/cards/" target="_blank" rel="noreferrer" className="underline cursor-pointer">UC San Diego Campus Card</a>.
-              </p>
-              <div className="flex justify-center">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd87N57bpfJCcK5tKX82pt3Uh0c8Vo8DoCh-LC6hAR54N7DaA/viewform?usp=sharing" target="_blank" rel="noreferrer" className="relative h-[44px] w-full max-w-[343px] md:w-[343px]">
-                  <svg className="absolute inset-0 size-full" fill="none" height="44" preserveAspectRatio="none" viewBox="0 0 343 44" width="343">
-                    <path d={btnPath} fill="#00629B" />
-                  </svg>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="font-['Source_Sans_Pro:Bold',sans-serif] text-[20px] text-center text-white tracking-[1px] uppercase">Access Request Form</p>
-                  </div>
-                </a>
               </div>
             </div>
           </div>
