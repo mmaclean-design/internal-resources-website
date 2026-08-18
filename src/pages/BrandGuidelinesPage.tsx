@@ -47,7 +47,7 @@ function BrandAssetsDropdown() {
               Design Lab Members may want to utilize the following branded assets and templates:
             </p>
             <div className="flex justify-center">
-              <a href="https://drive.google.com/file/d/1PbhsrF9VuZt9wGjLtts68ewkdm0pBi_n/view?usp=drive_link" target="_blank" rel="noreferrer" className="relative h-[44px] w-full max-w-[343px] md:w-[343px]">
+              <a href="https://drive.google.com/drive/folders/1P6c4XWnj3DDGQdjZf-YF_9IoOE1k05GH?usp=drive_link" target="_blank" rel="noreferrer" className="relative h-[44px] w-full max-w-[343px] md:w-[343px]">
                 <svg className="absolute inset-0 size-full" fill="none" height="44" preserveAspectRatio="none" viewBox="0 0 343 44" width="343">
                   <path d={btnPath} fill="#00629B" />
                 </svg>
@@ -66,7 +66,7 @@ function BrandAssetsDropdown() {
 export default function BrandGuidelinesPage() {
   return (
     <div className="bg-white w-full md:min-w-[1440px] min-h-screen flex flex-col items-center">
-      <div className="sticky top-0 z-50 w-full">
+      <div className="sticky top-0 z-50 w-full md:w-auto">
         <NavBar />
       </div>
 

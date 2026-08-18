@@ -166,7 +166,7 @@ export default function ContactPage() {
   const openStaff = (state as { openStaff?: boolean } | null)?.openStaff ?? false;
   return (
     <div className="bg-white w-full md:min-w-[1440px] min-h-screen flex flex-col items-center">
-      <div className="sticky top-0 z-50 w-full">
+      <div className="sticky top-0 z-50 w-full md:w-auto">
         <NavBar />
       </div>
 
