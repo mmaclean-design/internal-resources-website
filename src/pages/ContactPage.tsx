@@ -45,12 +45,12 @@ type StaffMember = {
 const staffMembers: StaffMember[] = [
   { name: "Mai Nguyen", title: "Director", email: "mainguyen@ucsd.edu", office: "DIB Office 353", img: imgMaiNguyen },
   { name: "Nadir Weibel", title: "Associate Faculty Director", email: "weibel@ucsd.edu", office: "DIB Office 360", img: imgNadirWeibel },
-  { name: "Sheila Oberrecht", title: "Executive Assistant to Director", email: "spoberrecht@ucsd.edu", office: "DIB Office 320", img: imgSheilaOberrecht },
-  { name: "Megan Maclean", title: "Operations Officer", email: "mmaclean@ucsd.edu", office: "DIB Office 316", img: imgMeganMaclean },
-  { name: "James White", title: "Head of Studios", email: "jameswhite@ucsd.edu", office: "DIB Office 332", img: imgJamesWhite },
+  { name: "Gaela Fernandez Florin", title: "Head of Strategic Partnerships", email: "gfernandezflorin@ucsd.edu", office: "", img: imgGaela },
   { name: "Olivia Gale", title: "Program Manager", email: "o1gale@ucsd.edu", office: "DIB Office 335", img: imgOliviaGale },
   { name: "Elysia Mac", title: "Program Manager", email: "esmac@ucsd.edu", office: "DIB Office 335", img: imgElysiaMac },
-  { name: "Gaela Fernandez Florin", title: "Head of Strategic Partnerships", email: "gfernandezflorin@ucsd.edu", office: "", img: imgGaela },
+  { name: "Megan Maclean", title: "Operations Officer", email: "mmaclean@ucsd.edu", office: "DIB Office 316", img: imgMeganMaclean },
+  { name: "Sheila Oberrecht", title: "Executive Assistant to Director", email: "spoberrecht@ucsd.edu", office: "DIB Office 320", img: imgSheilaOberrecht },
+  { name: "James White", title: "Head of Studios", email: "jameswhite@ucsd.edu", office: "DIB Office 332", img: imgJamesWhite },
 ];
 
 function StaffCard({ member }: { member: StaffMember }) {

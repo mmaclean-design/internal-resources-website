@@ -109,20 +109,9 @@ function PoliciesDropdown() {
         <div className="bg-white p-4 flex flex-col md:flex-row gap-4">
           <div className="bg-[#f5f0e6] flex-1 p-4 md:p-6 rounded-[8px]">
             <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[18px] md:text-[24px] tracking-[1.2px] uppercase mb-4">Space Standards</p>
-            <div className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[15px] md:text-[21px] space-y-4 mb-6">
-              <p>The occupancy and use of Design Lab spaces (defined as department offices, conference/meeting rooms, study/collaboration areas, and project spaces) is subject to the{" "}
-                <span className="font-['Source_Sans_Pro:SemiBold',sans-serif]">Design Lab Space Standards</span>. All occupants are encouraged to review the policy to ensure compliance.</p>
-              <p>Please contact the Design Lab Operations Team (<span className="underline cursor-pointer">dlab-ops@ucsd.edu</span>) with any further questions regarding the Space Standards.</p>
-            </div>
-            <div className="flex justify-center">
-              <button className="relative h-[44px] w-full max-w-[343px] md:w-[343px]">
-                <svg className="absolute inset-0 size-full" fill="none" height="44" preserveAspectRatio="none" viewBox="0 0 343 44" width="343">
-                  <path d={btnPath} fill="#00629B" />
-                </svg>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="font-['Source_Sans_Pro:Bold',sans-serif] text-[20px] text-center text-white tracking-[1px] uppercase">space standards</p>
-                </div>
-              </button>
+            <div className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[15px] md:text-[21px] space-y-4">
+              <p>Maintain shared Design Lab spaces, including department offices, conference and meeting rooms, study and collaboration areas, and project spaces, by using all spaces and equipment responsibly, respectfully, and as intended.</p>
+              <p>Please contact the Design Lab Operations Team (<span className="underline cursor-pointer">dlab-ops@ucsd.edu</span>) with any further questions regarding the space standards.</p>
             </div>
           </div>
           <div className="bg-[#f5f0e6] flex-1 p-4 md:p-6 rounded-[8px]">
