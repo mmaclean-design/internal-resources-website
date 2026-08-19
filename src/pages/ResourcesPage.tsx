@@ -155,67 +155,71 @@ function RoomReservationDropdown({ initialOpen = false }: { initialOpen?: boolea
             </p>
           </div>
 
-          {/* Room calendar blocks */}
+          {/* Room calendar blocks + reserve buttons, paired per room */}
           <div className="flex flex-col md:flex-row gap-4">
             {/* 311 */}
-            <a
-              href="https://calendar.google.com/calendar/embed?src=c_i5gqda41rr6oaop69ifnoajhmg%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-              target="_blank"
-              rel="noreferrer"
-              className="bg-[#f5f0e6] rounded-[8px] w-full md:flex-1 h-[300px] md:h-[494px] relative overflow-hidden block"
-            >
-              <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#182b49] text-[21.248px] tracking-[1.0624px] uppercase absolute top-4 left-5 z-10">311</p>
-              <div className="absolute inset-x-5 top-14 bottom-5 overflow-hidden">
-                <iframe
-                  src="https://calendar.google.com/calendar/embed?src=c_i5gqda41rr6oaop69ifnoajhmg%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-                  className="w-full h-full border-0 pointer-events-none"
-                  frameBorder={0}
-                  scrolling="no"
-                  title="Room 311 Calendar"
-                />
+            <div className="flex flex-col gap-4 w-full md:flex-1">
+              <a
+                href="https://calendar.google.com/calendar/embed?src=c_i5gqda41rr6oaop69ifnoajhmg%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+                target="_blank"
+                rel="noreferrer"
+                className="bg-[#f5f0e6] rounded-[8px] w-full h-[300px] md:h-[494px] relative overflow-hidden block"
+              >
+                <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#182b49] text-[21.248px] tracking-[1.0624px] uppercase absolute top-4 left-5 z-10">311</p>
+                <div className="absolute inset-x-5 top-14 bottom-5 overflow-hidden">
+                  <iframe
+                    src="https://calendar.google.com/calendar/embed?src=c_i5gqda41rr6oaop69ifnoajhmg%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+                    className="w-full h-full border-0 pointer-events-none"
+                    frameBorder={0}
+                    scrolling="no"
+                    title="Room 311 Calendar"
+                  />
+                </div>
+                <span className="absolute inset-0 z-10" />
+              </a>
+              <div className="bg-[#f5f0e6] rounded-[8px] w-full flex items-center justify-center py-6">
+                <a href="https://script.google.com/a/macros/ucsd.edu/s/AKfycbzVW_BijuR04t-ih6PLpcc5Uoe7yKxZSriucf4WRPb60USsKdkFrbDLx5AeRMY6xienTA/exec" target="_blank" rel="noreferrer" className="relative h-[44px] w-full max-w-[343px] md:w-[343px]">
+                  <svg className="absolute inset-0 size-full" fill="none" height="44" preserveAspectRatio="none" viewBox="0 0 343 44" width="343">
+                    <path d={btnPath} fill="#00629B" />
+                  </svg>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <p className="font-['Source_Sans_Pro:Bold',sans-serif] text-[20px] text-center text-white tracking-[1px] uppercase">Reserve Room 311</p>
+                  </div>
+                </a>
               </div>
-              <span className="absolute inset-0 z-10" />
-            </a>
+            </div>
             {/* 361 */}
-            <a
-              href="https://calendar.google.com/calendar/embed?src=c_36lmr3kbg5j68hfnes4tv745ek%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-              target="_blank"
-              rel="noreferrer"
-              className="bg-[#f5f0e6] rounded-[8px] w-full md:flex-1 h-[300px] md:h-[494px] relative overflow-hidden block"
-            >
-              <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#182b49] text-[21.248px] tracking-[1.0624px] uppercase absolute top-4 left-5 z-10">361</p>
-              <div className="absolute inset-x-5 top-14 bottom-5 overflow-hidden">
-                <iframe
-                  src="https://calendar.google.com/calendar/embed?src=c_36lmr3kbg5j68hfnes4tv745ek%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-                  className="w-full h-full border-0 pointer-events-none"
-                  frameBorder={0}
-                  scrolling="no"
-                  title="Room 361 Calendar"
-                />
-              </div>
-              <span className="absolute inset-0 z-10" />
-            </a>
+            <div className="flex flex-col gap-4 w-full md:flex-1">
+              <a
+                href="https://calendar.google.com/calendar/embed?src=c_36lmr3kbg5j68hfnes4tv745ek%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+                target="_blank"
+                rel="noreferrer"
+                className="bg-[#f5f0e6] rounded-[8px] w-full h-[300px] md:h-[494px] relative overflow-hidden block"
+              >
+                <p className="font-['Source_Sans_Pro:SemiBold',sans-serif] text-[#182b49] text-[21.248px] tracking-[1.0624px] uppercase absolute top-4 left-5 z-10">361</p>
+                <div className="absolute inset-x-5 top-14 bottom-5 overflow-hidden">
+                  <iframe
+                    src="https://calendar.google.com/calendar/embed?src=c_36lmr3kbg5j68hfnes4tv745ek%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+                    className="w-full h-full border-0 pointer-events-none"
+                    frameBorder={0}
+                    scrolling="no"
+                    title="Room 361 Calendar"
+                  />
+                </div>
+                <span className="absolute inset-0 z-10" />
+              </a>
+              <div className="bg-[#f5f0e6] rounded-[8px] w-full flex items-center justify-center py-6">
+                <a href="https://script.google.com/a/macros/ucsd.edu/s/AKfycbxY8bRVzUsM1Sc5AZkzPahzNCeSguNEEf5VHK6zY18m0mnkD96aNfDJMJmI-4LKTCg/exec" target="_blank" rel="noreferrer" className="relative h-[44px] w-full max-w-[343px] md:w-[343px]">
+                  <svg className="absolute inset-0 size-full" fill="none" height="44" preserveAspectRatio="none" viewBox="0 0 343 44" width="343">
+                    <path d={btnPath} fill="#00629B" />
+                  </svg>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <p className="font-['Source_Sans_Pro:Bold',sans-serif] text-[20px] text-center text-white tracking-[1px] uppercase">Reserve Room 361</p>
+                </div>
+              </a>
+            </div>
           </div>
-
-          {/* Buttons */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-x-[325px]">
-            <a href="https://script.google.com/a/macros/ucsd.edu/s/AKfycbzVW_BijuR04t-ih6PLpcc5Uoe7yKxZSriucf4WRPb60USsKdkFrbDLx5AeRMY6xienTA/exec" target="_blank" rel="noreferrer" className="relative h-[44px] w-full max-w-[343px] md:w-[343px]">
-              <svg className="absolute inset-0 size-full" fill="none" height="44" preserveAspectRatio="none" viewBox="0 0 343 44" width="343">
-                <path d={btnPath} fill="#00629B" />
-              </svg>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="font-['Source_Sans_Pro:Bold',sans-serif] text-[20px] text-center text-white tracking-[1px] uppercase">Reserve Room</p>
-              </div>
-            </a>
-            <a href="https://script.google.com/a/macros/ucsd.edu/s/AKfycbxY8bRVzUsM1Sc5AZkzPahzNCeSguNEEf5VHK6zY18m0mnkD96aNfDJMJmI-4LKTCg/exec" target="_blank" rel="noreferrer" className="relative h-[44px] w-full max-w-[343px] md:w-[343px]">
-              <svg className="absolute inset-0 size-full" fill="none" height="44" preserveAspectRatio="none" viewBox="0 0 343 44" width="343">
-                <path d={btnPath} fill="#00629B" />
-              </svg>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="font-['Source_Sans_Pro:Bold',sans-serif] text-[20px] text-center text-white tracking-[1px] uppercase">Reserve Room</p>
-              </div>
-            </a>
-          </div>
+        </div>
         </div>
       )}
     </div>
