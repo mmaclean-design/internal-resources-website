@@ -110,7 +110,7 @@ function PoliciesDropdown() {
           <div className="bg-[#f5f0e6] flex-1 p-4 md:p-6 rounded-[8px]">
             <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[18px] md:text-[24px] tracking-[1.2px] uppercase mb-4">Space Standards</p>
             <div className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[15px] md:text-[21px] space-y-4">
-              <p>Maintain shared Design Lab spaces, including department offices, conference and meeting rooms, study and collaboration areas, and project spaces, by using all spaces and equipment responsibly, respectfully, and as intended.</p>
+              <p>Maintain shared Design Lab spaces, including department offices, conference rooms, collaboration areas, and project spaces, by using equipment and workspaces responsibly, respectfully, and as intended.</p>
               <p>Please contact the Design Lab Operations Team (<span className="underline cursor-pointer">dlab-ops@ucsd.edu</span>) with any further questions regarding the space standards.</p>
             </div>
           </div>
