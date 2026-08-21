@@ -36,11 +36,11 @@ function BrandAssetsDropdown() {
       <DropdownHeader title="Brand Assets" open={open} onToggle={() => setOpen(!open)} />
       {open && (
         <div className="bg-white p-4 flex flex-col md:flex-row gap-4">
-          <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:68698f1c-bb29-4cfc-b1c0-ce4a404fa764" target="_blank" rel="noreferrer" className="bg-[#f5f0e6] w-full md:w-[858px] p-4 rounded-[8px] block">
-            <div className="rounded-[25px] overflow-hidden h-[240px] md:h-[516px]">
-              <img alt="Brand assets" className="w-full h-full object-cover" src={imgBrandScreenshot} />
+          <div className="bg-[#f5f0e6] w-full md:w-[858px] p-4 rounded-[8px]">
+            <div className="rounded-[25px] overflow-hidden aspect-[71/46]">
+              <img alt="Brand assets" className="w-full h-full object-contain" src={imgBrandScreenshot} />
             </div>
-          </a>
+          </div>
           <div className="bg-[#f5f0e6] flex-1 p-4 md:p-6 rounded-[8px]">
             <p className="font-['Refrigerator_Deluxe:ExtraBold',sans-serif] text-[#1e1e1e] text-[18px] md:text-[24px] tracking-[1.2px] uppercase mb-4">Brand Downloads</p>
             <p className="font-['Source_Sans_Pro:Light',sans-serif] text-[#1e1e1e] text-[15px] md:text-[21px] mb-8">
